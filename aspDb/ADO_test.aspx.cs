@@ -32,7 +32,8 @@ namespace aspDb
 
         protected void ddl_country_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //comment
+            //comment 
+            Console.Write("hello");
                 Console.Write("hi");
                 SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=EBussines;User ID=sa;Password=123");
                 SqlCommand cmd = new SqlCommand("Select * from City where FK_CountryId=" + ddl_country.SelectedValue, con);
